@@ -1,3 +1,4 @@
+/* ===== ESTILOS GENERALES ===== */
 body {
     margin: 0;
     font-family: 'Segoe UI', Arial, sans-serif;
@@ -5,6 +6,7 @@ body {
     color: #333;
 }
 
+/* ===== NAVBAR ===== */
 .navbar {
     display: flex;
     align-items: center;
@@ -59,5 +61,41 @@ body {
 .nav-links li {
     cursor: pointer;
     font-weight: 500;
+}
+
+.user-actions span {
+    margin-left: 18px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+/* ===== BANNER PRINCIPAL ===== */
+.main-banner {
+    background: linear-gradient(180deg, #ffe600 60%, #fff 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 10%;
+}
+
+.banner-content h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin: 0 0 10px 0;
+}
+
+.banner-content span {
+    color: #0033ff;
+    font-weight: bold;
+}
+
+.banner-content p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.banner-products img {
+    height: 180px;
+    margin-left: 30px;
 }
 
