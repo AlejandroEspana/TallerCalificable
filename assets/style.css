@@ -99,3 +99,19 @@ body {
     margin-left: 30px;
 }
 
+/* ===== PRODUCTOS DESTACADOS ===== */
+.featured-products {
+    padding: 40px 10% 20px 10%;
+}
+
+.featured-products h2 {
+    margin-bottom: 20px;
+    color: #0033ff;
+}
+
+.products-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+}
