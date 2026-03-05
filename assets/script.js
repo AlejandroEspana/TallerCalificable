@@ -47,3 +47,30 @@ function renderProductos() {
         grid.appendChild(card);
     });
 }
+
+// Buscador de productos
+const searchInput = document.getElementById('searchInput');
+const searchBtn = document.getElementById('searchBtn');
+
+searchBtn.addEventListener('click', () => {
+    const query = searchInput.value.toLowerCase();
+    const filtrados = productos.filter(p => p.nombre.toLowerCase().includes(query));
+    const grid = document.getElementById('productsGrid');
+    grid.innerHTML = '';
+    filtrados.forEach(prod => {
+        const card = document.createElement('div');
+        card.className = 'product-card';
+        card.innerHTML = `
+            <img src="${prod.imagen}" alt="${prod.nombre}">
+            <h4>${prod.nombre}</h4>
+            <p>${prod.precio}</p>
+        `;
+        grid.appendChild(card);
+    });
+    if (filtrados.length === 0) {
+        grid.innerHTML = '<p>No se encontraron productos.</p>';
+    }
+});
+
+// Render inicial
+renderProductos();
