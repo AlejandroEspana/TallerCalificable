@@ -99,6 +99,24 @@ body {
     margin-left: 30px;
 }
 
+/* ===== SECCION DE SERVICIOS ===== */
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    padding: 30px 0 10px 0;
+    background: #f5f5f5;
+}
+
+.service-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #0001;
+    padding: 18px 22px;
+    width: 180px;
+    text-align: center;
+}
+
 /* ===== PRODUCTOS DESTACADOS ===== */
 .featured-products {
     padding: 40px 10% 20px 10%;
