@@ -116,3 +116,32 @@ body {
     justify-content: center;
 }
 
+/* ===== TARJETA DE PRODUCTO ===== */
+.product-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #0001;
+    width: 200px;
+    padding: 18px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 4px 16px #0002;
+}
+
+.product-card img {
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.product-card h4 {
+    margin: 10px 0 5px 0;
+}
+
+.product-card p {
+    color: #009933;
+    font-weight: bold;
+}
